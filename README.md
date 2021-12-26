@@ -21,7 +21,7 @@
  Go to the `C:\Users\<username>\AppData\Local` folder with File Explorer. Once you're there, create a folder named `BatteryReminder` (or any other name you want). In this folder, paste the `BatteryReminder.exe` file that you downloaded earlier.
 
 ### Step 3
- Go to the `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Start-up` folder with File Explorer. Right-click on a blank area in the File Explorer window and create a new shortcut to the file that you just pasted and by passing the `-start` parameter. The shortcut should be like:
+ Go to the `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Start-up` folder with File Explorer. Right-click on a blank area in the File Explorer window and create a new shortcut to the file that you just pasted in Step 2 and by passing the `-start` parameter. The shortcut should be like:
  ```"C:\Users\<username>\AppData\Local\BatteryReminder\BatteryReminder.exe" -start```
  Now, name the shortcut like you feel, and restart your computer. BatteryReminder is now running.
 
