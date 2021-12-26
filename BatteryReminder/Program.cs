@@ -69,7 +69,7 @@ namespace BatteryReminder
                         PowerStatus LocalPs = SystemInformation.PowerStatus;
 
                         // Wait until the battery level has dropped of 1%
-                        if (LocalPs.BatteryLifePercent < 100) break;
+                        if (LocalPs.BatteryLifePercent < 1) break;
 
                         Thread.Sleep(60 * 1000);  // Wait 1 minute
                     }
