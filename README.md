@@ -15,15 +15,15 @@
  have to install it yourself. **Only install it on a computer with a battery!**
 
 ### Step 1
- Download the release from [here](https://github.com/Ryanhtech/battery-reminder/releases/tag/release). Next, verify if .NET Framework 3.5 is installed on your computer, because it is required for BatteryReminder to run. It should be included with Windows 10/11, but to figure out, open the *BatteryReminder.exe* file and if you see a message box saying `Pour commencer à utiliser BatteryReminder, installez-le sur un appareil équipé d'une batterie.`, it means that .NET Framework works and you can continue to the next step.
+ Download the release from [here](https://github.com/Ryanhtech/battery-reminder/releases/tag/release). Next, verify if .NET Framework 3.5 is installed on your computer, because it is required for BatteryReminder to run. It should be included with Windows 10/11, but to figure out, open the *BatteryReminder.exe* file and if you see a message box saying `Pour commencer à utiliser BatteryReminder, installez-le sur un appareil équipé d'une batterie.`, it means that .NET Framework works and you can continue to the next step. Else, follow the instructions Windows gives to you and try again once it's finished.
  
 ### Step 2
- Go to the folder `C:\Users\<username>\AppData\Local`with File Explorer. Once you're there, create a folder named `BatteryReminder`(or any other name you want). In this folder, paste the `BatteryReminder.exe`file that you downloaded earlier.
+ Go to the folder `C:\Users\<username>\AppData\Local` with File Explorer. Once you're there, create a folder named `BatteryReminder` (or any other name you want). In this folder, paste the `BatteryReminder.exe` file that you downloaded earlier.
 
 ### Step 3
- Go to the `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Start-up` folder with File Explorer. Right-click on a blank area and create a new shortcut to the file that you just pasted and by passing the `-start`parameter. The shortcut should be like:
+ Go to the `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Start-up` folder with File Explorer. Right-click on a blank area in the File Explorer window and create a new shortcut to the file that you just pasted and by passing the `-start` parameter. The shortcut should be like:
  ```"C:\Users\<username>\AppData\Local\BatteryReminder\BatteryReminder.exe" -start```
  Now, name the shortcut like you feel, and restart your computer. BatteryReminder is now running.
 
 ## Uninstallation
- To uninstall BatteryReminder, delete the shortcut referenced in the step 3 of the installation, and restart your PC. Once you have done this, delete the `.exe`file in the path referenced in the step 2 of the installation. BatteryReminder is now uninstalled.
+ To uninstall BatteryReminder, delete the shortcut that you created in the step 3 of the installation, and restart your PC. Once you have done this, delete the `.exe` file you created in the step 2 of the installation. BatteryReminder is now uninstalled.
