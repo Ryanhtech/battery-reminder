@@ -16,6 +16,21 @@ namespace BatteryReminder
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            if (Arguments.Contains("-debug"))
+            {
+                PowerStatus ps = SystemInformation.PowerStatus;
+
+                MessageBox.Show("Battery level: " + ps.BatteryLifePercent +
+                    "\nPowerStatus.PowerLineStatus == PowerLineStatus.Online: " + (ps.PowerLineStatus == PowerLineStatus.Online).ToString() +
+                    "\nOffline: " + (ps.PowerLineStatus == PowerLineStatus.Offline).ToString() +
+                    "\nUnknown: " + (ps.PowerLineStatus == PowerLineStatus.Unknown).ToString(),
+                    "Debug (BatteryReminder)",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                return 0;
+            }
+
             //Application.Run(new ChargedForm());
 
             if (!Arguments.Contains("-start"))
@@ -43,7 +58,8 @@ namespace BatteryReminder
             {
                 PowerStatus ps = SystemInformation.PowerStatus;
 
-                if (ps.BatteryLifePercent == 100 && ps.PowerLineStatus == PowerLineStatus.Online)
+                // 1 = 100%
+                if (ps.BatteryLifePercent == 1 && ps.PowerLineStatus == PowerLineStatus.Online)
                 {
                     ChargedFormInst.ShowDialog();
 
