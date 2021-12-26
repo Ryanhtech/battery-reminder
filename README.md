@@ -12,7 +12,12 @@
 
 ## Installation (Windows)
  There isn't a built-in installer for BatteryReminder for Windows, so you
- have to install it yourself.
+ have to install it yourself. **Only install it on a computer with a battery!**
 
 ### Step 1
+ Download the release from [here](https://github.com/Ryanhtech/battery-reminder/releases/tag/release). Next, verify if .NET Framework 3.5 is installed on your computer, because it is required for BatteryReminder to run. It should be included with Windows 10/11, but to figure out, open the *BatteryReminder.exe* file and if you see a message box saying `Pour commencer à utiliser BatteryReminder, installez-le sur un appareil équipé d'une batterie.`, it means that .NET Framework works and you can continue to the next step.
+ 
+### Step 2
 
+
+### 
